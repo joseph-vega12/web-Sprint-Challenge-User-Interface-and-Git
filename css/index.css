@@ -2,6 +2,9 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+* {
+    color: black;
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -21,7 +24,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -49,6 +52,8 @@ table {
 
 * {
     box-sizing: border-box;
+    font-size: 62.5%;
+    text-decoration: none;
 }
 
 html, body {
@@ -64,6 +69,30 @@ h1, h2, h3, h4, h5 {
 
 p {
     line-height: 1.4;
+}
+
+/* Navigation Section */
+
+header {
+    padding-top: 5%;
+}
+
+header nav {
+display: inline; 
+}
+
+header nav a {
+    font-size: 0.9rem;
+    color: black; 
+    padding: 0 4%;
+}
+
+.hero-image {
+    margin: 4% 0;
+}
+
+.hero-image img {
+    width: 99%;
 }
 
 .container {
@@ -101,16 +130,56 @@ p {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10 {
     width: 12.5%;
     height: 100px;
-    background: black;
+    /* background: black; */
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.middle-content .boxes .box1 {
+    background: teal; 
+} 
+
+.middle-content .boxes .box2 {
+    background: gold; 
+} 
+
+.middle-content .boxes .box3 {
+    background: cadetblue; 
+} 
+
+.middle-content .boxes .box4 {
+    background: coral; 
+} 
+
+.middle-content .boxes .box5 {
+    background: crimson; 
+} 
+
+.middle-content .boxes .box6 {
+    background: forestgreen; 
+} 
+
+.middle-content .boxes .box7 {
+    background: darkorchid; 
+} 
+
+.middle-content .boxes .box8 {
+    background: hotpink; 
+} 
+
+.middle-content .boxes .box9 {
+    background: indigo; 
+} 
+
+.middle-content .boxes .box10 {
+    background: dodgerblue; 
+} 
 
 .bottom-content {
     display: flex;
@@ -143,4 +212,71 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* ABOUT PAGE STARTS HERE */
+
+.top-section {
+    margin: 3% 0; 
+}
+.top-section .container-about-page{
+    margin: 0 2%;
+    border-bottom: 1px dashed black;
+}
+
+.top-section .container-about-page p {
+    margin-bottom: 3%;
+}
+
+/* IMAGE SECTION */
+
+.mid-section  {
+    display: flex;
+    justify-content: space-around;
+}
+.mid-section .images {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mid-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    flex-direction: row;
+}
+
+.mid-section .box {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-bottom: 1px dashed black;
+}
+
+.mid-section .box h2, p, a{
+    margin: 3% 0;
+}
+
+.mid-section .box a {
+    text-align: center;
+    border: 2px solid black;
+    width: 38%;
+    padding: 3%;
+    border-radius: 10px;
+}
+
+/* Bottom Section */
+
+.bottom-sect {
+    margin: 5% 5%;
+
+}
+
+/* footer */ 
+
+footer nav {
+margin-bottom: 10%;
+height: 6vh;
 }
